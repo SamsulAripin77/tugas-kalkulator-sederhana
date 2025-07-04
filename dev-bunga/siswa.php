@@ -1,5 +1,5 @@
 <?php
- echo "=== Daftar Nilai Siswa ===\n";
+ echo "=== Daftar Nilai Raport Siswa ===\n";
 
  //Function(paraemeter, return value) - Scope variabel lokal
 function cekKelulusan($nilai){
