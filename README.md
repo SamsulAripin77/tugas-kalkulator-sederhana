@@ -55,3 +55,79 @@ Masukkan operator (+, -, *, /, %): /
 Masukkan angka kedua: 2
 
 Hasil dari 10 / 2 adalah: 5
+```
+
+---
+
+# 📊 Tugas 2: Sistem Nilai Raport Siswa (PHP Console App)
+
+## 🎯 Tujuan
+
+Melatih konsep pemrograman dasar PHP:
+- Array dan associative array
+- Perulangan (`foreach`, `for`)
+- Function (parameter, return value)
+- Operator perbandingan dan logika
+- Scope variabel (`global` dan `local`)
+
+---
+
+## 📄 Deskripsi Tugas
+
+Buat aplikasi berbasis **console/terminal** yang menampilkan **daftar nilai siswa** dan status **kelulusan** berdasarkan nilai.
+
+---
+
+## ✅ Fitur Wajib
+
+1. Gunakan **associative array** untuk menyimpan data siswa dan nilai:
+
+```php
+$siswa = [
+  "Andi" => 78,
+  "Budi" => 65,
+  "Citra" => 90,
+  "Dina" => 45
+];
+```
+
+2. Buat function bernama cekKelulusan($nilai):
+
+    - Kembalikan "Lulus" jika nilai >= 70
+
+    - Kembalikan "Tidak Lulus" jika nilai < 70
+
+3. Gunakan perulangan foreach untuk:
+
+    Mencetak nama siswa, nilai, dan status kelulusan
+
+4. Hitung dan tampilkan:
+
+    - Total siswa
+
+    - Nilai rata-rata
+
+    - Jumlah yang lulus dan tidak lulus
+
+5. Gunakan variabel global untuk menyimpan total nilai atau jumlah siswa.
+```
+   === Daftar Nilai Siswa ===
+
+Andi   : 78 - Lulus
+Budi   : 65 - Tidak Lulus
+Citra  : 90 - Lulus
+Dina   : 45 - Tidak Lulus
+
+Total siswa     : 4
+Rata-rata nilai : 69.5
+Jumlah Lulus    : 2
+Jumlah Tidak Lulus : 2
+```
+
+ ### Validasi Wajib
+
+   - Nilai harus antara 0 - 100
+
+   - Jangan cetak data jika nilainya tidak valid (gunakan if)
+
+   - Gunakan number_format() untuk menampilkan rata-rata dengan 1 angka desimal
